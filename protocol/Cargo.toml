@@ -1,0 +1,10 @@
+[package]
+edition = "2021"
+license = "AGPL-3.0-or-later"
+name = "protocol"
+version = "0.1.0"
+
+[dependencies]
+ciborium = "0.2"
+operational-transform = { version = "0.6", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }

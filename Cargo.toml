@@ -1,0 +1,6 @@
+[workspace]
+members = ["protocol", "server", "wasm"]
+resolver = "2"
+
+[patch.crates-io]
+operational-transform = { path = "/mnt/zdani/code/notmine/operational-transform-rs/operational-transform" }

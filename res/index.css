@@ -1,0 +1,31 @@
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#viewer-frame, #viewer-errors {
+	display: none;
+}
+
+#viewer.loaded #viewer-frame {
+	display: initial;
+}
+
+#viewer.loaded #viewer-loading, #viewer.error #viewer-loading {
+	display: none;
+}
+
+#viewer.error #viewer-errors {
+	display: initial;
+}
+
+#viewer.error #viewer-frame {
+	display: none;
+}
+

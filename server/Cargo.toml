@@ -1,0 +1,20 @@
+[package]
+edition = "2021"
+license = "AGPL-3.0-or-later"
+name = "server"
+version = "0.1.0"
+
+[dependencies]
+anyhow = "1"
+axum = { version = "0.6", default_features = false, features = [
+	"http1",
+	"tokio",
+	"ws",
+] }
+operational-transform = "0.6"
+parking_lot = "0.12"
+protocol = { path = "../protocol" }
+tokio = { version = "1", features = ["macros", "rt"] }
+tower-http = { version = "0.4", features = ["fs"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
