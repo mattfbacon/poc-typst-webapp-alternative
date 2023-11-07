@@ -11,6 +11,7 @@ Some notable features that are missing:
 
 - A better renderer for the preview that doesn't flicker and maintains its position when the document changes. Currently we are just embedding a PDF.
 - A better editor to complement this, with things like correct syntax highlighting, clicking to go to definitions, inline errors, etc. We may want to switch to Monaco; I used Ace for this because its API is a bit simpler in some ways.
+- Packages and plugins. Packages should be fairly simply, plugins not so much.
 - Users, projects, files, etc. This is kind of boring and would be pretty easy to bolt on.
 
 PRs welcome if you want to help build this!
